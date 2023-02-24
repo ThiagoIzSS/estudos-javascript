@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabalhando no terminal</h1>
+        <p>No terminal escreva o número 123.5, mas apresente ele com duas casas decimais e trocando o ponto por vírgula</p>
+        <!--number = 123.5 
+            number.toFixed(2).replace('.', ',')-->
+    <script>
+        let name = window.prompt("Qual o seu nome?");
+        window.alert(`${name} acabou de digitar o nome dele`);
+        document.write(`o nome <strong>${name}</strong> tem ${name.length} letras`)
+
+        let number1 = Number.parseInt(window.prompt("Digite o número 5.7"));
+        let number2 = Number.parseInt(window.prompt("Digite o número 5.6"));
+
+        let sum = number1 + number2;
+
+        window.alert(`Confirme se o resultado é 10. O resultado é:${sum}.`);
+
+        let number3 = Number.parseFloat(window.prompt("Digite o número 5.7"));
+        let number4 = Number.parseFloat(window.prompt("Digite o número 5.6"));
+
+        let sum2 = number3 + number4;
+
+        window.alert(`A soma é 11.3. O resultado deu: ${sum2}`);
+        window.confirm("Lembre-se que é possível utilizar Number(n) para converter para um número");
+
+        let cpf = window.prompt(`Digite os 6 primeiro dígitos do seu cpf. ele deve ser convertido para String`);
+
+        window.confirm(`Os números foram convertidos para string? Os números eram: ${cpf.toString()}`)
+    </script>
+</body>
+</html>
